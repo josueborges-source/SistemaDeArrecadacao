@@ -1,2 +1,2 @@
 # SistemaDeArrecadacao
-Sistema De Arrecadacao Para Layout Celesc
+Sistema De Arrecadacao De Terceiros
