@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sun Jul 17 13:09:39 BRT 2022:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.16.1.1 - (1901046): instance a816c00e-0182-0cec-2749-000007808800 
+on database directory C:\Users\elias\eclipse-workspace\AcustraCelesc\acustrabd with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@c387f44 
+Loaded from file:/C:/Users/elias/eclipse-workspace/AcustraCelesc/libs/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=18.0.1.1+2-6
+user.dir=C:\Users\elias\eclipse-workspace\AcustraCelesc
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
