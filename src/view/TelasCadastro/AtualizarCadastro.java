@@ -16,8 +16,8 @@ import javax.swing.JTextField;
 import com.toedter.calendar.JDateChooser;
 
 import dao.DetailConveniadoDAO;
-import model.Detail_conveniado;
-import model.Detail_conveniado.CPF_CPNJ;
+import model.DetailConveniado;
+import model.DetailConveniado.CPF_CPNJ;
 import model.ModeloDeValidacaoTextField;
 import util.Util;
 
@@ -34,6 +34,9 @@ public class AtualizarCadastro {
 	final JLabel valorDoacao = new JLabel("Valor Doação:");
 	final JTextField valorDoacaoTextField = new JTextField();
 	final JButton salvarCadastroButton = new JButton("Salvar Cadastro");
+	
+	final JButton buscarButton = new JButton("Buscar");
+	
 	final JTextField comandoDeMovimentoTextField = new JTextField();
 	final JTextField descricaoOcorrenciaTextField = new JTextField();
 	final JLabel descricaoDeOcorrenciaLabel = new JLabel("Descrição de Ocorrência:");
@@ -86,6 +89,8 @@ public class AtualizarCadastro {
 		novoCadastro.add(valorDoacaoTextField);
 		novoCadastro.add(chckbxTmpContrato);
 		novoCadastro.add(salvarCadastroButton);
+		novoCadastro.add(buscarButton);
+		
 		cpfCnpjButtonGroup.add(cpf_rdnButton);
 		cpfCnpjButtonGroup.add(cnpj_rdnButton);
 
@@ -108,7 +113,7 @@ public class AtualizarCadastro {
 				DetailConveniadoDAO detailDAO = new DetailConveniadoDAO();
 
 				// DETAIL CONVENIADO MODELO
-				Detail_conveniado detailConveniado = new Detail_conveniado();
+				DetailConveniado detailConveniado = new DetailConveniado();
 				/// ArrayList<ModeloDeValidacaoTextField> camposDeValidacao = new
 				/// ArrayList<ModeloDeValidacaoTextField>();
 
@@ -330,7 +335,7 @@ public class AtualizarCadastro {
 				}
 				
 				if(!errosNoPainel) {
-				detailDAO.salvar(detailConveniado);
+				detailDAO.Salvar(detailConveniado);
 				}
 			}				
 		});
@@ -364,7 +369,8 @@ public class AtualizarCadastro {
 		valorDoacao.setBounds(423, 88, 79, 14);
 		valorDoacaoTextField.setBounds(550, 85, 216, 20);
 		chckbxTmpContrato.setBounds(25, 347, 223, 23);
-		salvarCadastroButton.setBounds(25, 433, 872, 50);
+		salvarCadastroButton.setBounds(25, 433, 872, 50);		
+		buscarButton.setBounds(25, 433, 872, 50);
 
 		valorDoacaoTextField.setColumns(10);
 		comandoDeMovimentoTextField.setColumns(10);

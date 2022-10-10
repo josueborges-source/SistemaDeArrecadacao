@@ -21,6 +21,8 @@ public class HeaderDAO {
 	{
 		HeaderDAO dao = new HeaderDAO();
 		
+		
+		
 		dao.excluirTabela();
 		dao.criarTabela();
 		

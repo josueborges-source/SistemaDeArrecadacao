@@ -16,8 +16,8 @@ import javax.swing.JTextField;
 import com.toedter.calendar.JDateChooser;
 
 import dao.DetailConveniadoDAO;
-import model.Detail_conveniado;
-import model.Detail_conveniado.CPF_CPNJ;
+import model.DetailConveniado;
+import model.DetailConveniado.CPF_CPNJ;
 import model.ModeloDeValidacaoTextField;
 import util.Util;
 
@@ -37,7 +37,7 @@ public class NovoCadastro {
 	final JTextField comandoDeMovimentoTextField = new JTextField();
 	final JTextField descricaoOcorrenciaTextField = new JTextField();
 	final JLabel descricaoDeOcorrenciaLabel = new JLabel("Descrição de Ocorrência:");
-	final JTextField coberturaOcorrenciaTextField = new JTextField();
+	final JTextField coberturaOcorrenciaTextField = new JTextField();	
 
 	final JLabel registroTextField = new JLabel("000001");
 	final JDateChooser dateChooserInicio = new JDateChooser();
@@ -86,6 +86,7 @@ public class NovoCadastro {
 		novoCadastro.add(valorDoacaoTextField);
 		novoCadastro.add(chckbxTmpContrato);
 		novoCadastro.add(salvarCadastroButton);
+		
 		cpfCnpjButtonGroup.add(cpf_rdnButton);
 		cpfCnpjButtonGroup.add(cnpj_rdnButton);
 
@@ -108,7 +109,7 @@ public class NovoCadastro {
 				DetailConveniadoDAO detailDAO = new DetailConveniadoDAO();
 
 				// DETAIL CONVENIADO MODELO
-				Detail_conveniado detailConveniado = new Detail_conveniado();
+				DetailConveniado detailConveniado = new DetailConveniado();
 				/// ArrayList<ModeloDeValidacaoTextField> camposDeValidacao = new
 				/// ArrayList<ModeloDeValidacaoTextField>();
 
@@ -330,7 +331,7 @@ public class NovoCadastro {
 				}
 				
 				if(!errosNoPainel) {
-				detailDAO.salvar(detailConveniado);
+				detailDAO.Salvar(detailConveniado);
 				}
 			}				
 		});

@@ -4,7 +4,7 @@ import java.sql.Date;
 import java.util.Calendar;
 
 public class Header {
-
+	
 	private Integer identificacaoRegistro = Integer.valueOf(1);
 	private String contrato = "01000000002022908203774000AC1";
 	private Integer codConcessionaria = Integer.valueOf(0001);
@@ -15,8 +15,7 @@ public class Header {
 	private String nomeClienteContratante = "ASSOCIACAO CULTURAL";
 	private String espacoBrancoQuarenta = "                                        "; /* espaco em branco tamanho 40 */
 	private Integer tipoArquivo;
-	private Integer numeroSequencialRegistro = Integer.valueOf(000001);
-	
+	private Integer numeroSequencialRegistro = Integer.valueOf(000001);	
 	
 
 	public Integer getIdentificacaoRegistro() {

@@ -2,11 +2,10 @@ package model;
 
 public class Footer {
 	
-	private int identificacaoRegistro; /* fixo */
+	private int identificacaoRegistro; /* Fixo */
 	private int valorTotaldosLancamentos; /* Máximo 11 caracteres, com zeros à esquerda, sem virgura ou ponto para as casas decimais (ex.: R$5,00 = 00000000500)*/
 	private String espacoBranco = "                                                                                                                                    "; /* espaço em branco tamanho 132 */
-	private int numeroSequencialRegistro;
-	
+	private int numeroSequencialRegistro;	
 	
 	
 	public int getIdentificacaoRegistro() {
